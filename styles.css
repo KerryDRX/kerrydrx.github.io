@@ -1,0 +1,296 @@
+:root {
+  --ink: #222;
+  --muted: #555;
+  --line: #e6e6e6;
+  --link: #1772d0;
+  --bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.nav-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-brand {
+  color: var(--link);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.nav-brand:hover {
+  text-decoration: none;
+  color: #0d5cb0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+}
+
+.nav-link {
+  color: var(--muted);
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  height: 2px;
+  background: var(--link);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 56px;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 28px 72px;
+  align-items: start;
+}
+
+.profile {
+  position: sticky;
+  top: 84px;
+  text-align: center;
+}
+
+main {
+  min-width: 0;
+}
+
+.portrait {
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.profile h1 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.icons a {
+  color: #444;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+}
+
+.icons a:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+.icons svg,
+.icons img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+main > section + section {
+  margin-top: 8px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.intro {
+  margin: 0;
+}
+
+.exp {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin: 0 0 22px;
+}
+
+.exp img {
+  width: 128px;
+  max-height: 52px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.exp p {
+  margin: 0;
+}
+
+.exp-title {
+  margin-bottom: 4px !important;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.paper {
+  display: grid;
+  grid-template-columns: 168px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+.paper:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.teaser {
+  width: 168px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.paper h3 {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.authors,
+.venue {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.paper-links {
+  font-weight: 400;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .nav-link.active::after {
+    bottom: -4px;
+  }
+
+  .page {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 28px;
+  }
+
+  .profile {
+    position: static;
+  }
+
+  .exp,
+  .paper {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .exp img,
+  .teaser {
+    width: 96px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-links {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 22px;
+    row-gap: 10px;
+  }
+}

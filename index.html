@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruxiao Duan</title>
+  <meta name="description" content="Ruxiao Duan, Ph.D. student at Yale University.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a class="nav-brand" href="#home">Ruxiao Duan</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#experience" class="nav-link">Industry Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page" id="home">
+    <aside class="profile">
+      <img class="portrait" src="images/portrait.jpg" alt="Portrait">
+      <h1>Ruxiao Duan</h1>
+      <p class="role">Ph.D. Student at Yale University</p>
+      <nav class="icons" aria-label="Contact">
+        <a href="mailto:ruxiao.duan@yale.edu" title="Email" aria-label="Email">
+          <img src="images/gmail.svg" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/ruxiao-duan" title="LinkedIn" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="">
+        </a>
+        <a href="https://scholar.google.com/citations?user=QHxJoWEAAAAJ" title="Google Scholar" aria-label="Google Scholar">
+          <img src="images/scholar.svg" alt="">
+        </a>
+        <a href="https://github.com/KerryDRX" title="GitHub" aria-label="GitHub">
+          <img src="images/github.svg" alt="">
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <section>
+        <h2 id="about">About</h2>
+        <p class="intro">
+          I am a Ph.D. student in Computer Science at <strong>Yale University</strong>. I develop <strong>trustworthy, explainable, and adaptive spatial intelligence</strong> systems that can reconstruct and understand 3D/4D scenes from diverse sensors, recognize their own failure modes, and adapt to changing environments and sensor configurations while retaining previous knowledge. My research brings together <strong>3D/4D computer vision</strong>, <strong>uncertainty quantification</strong>, <strong>multimodal learning</strong>, and <strong>continual learning</strong> to build reliable spatial systems for challenging real-world settings.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="experience">Industry Experience</h2>
+        <article class="exp">
+          <img src="images/google.svg" alt="Google">
+          <div>
+            <p class="exp-title"><strong>Google</strong></p>
+            <p>Research: Camera-adaptive feed-forward 3D reconstruction</p>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2 id="education">Education</h2>
+        <article class="exp">
+          <img src="images/yale.svg" alt="Yale University">
+          <div>
+            <p class="exp-title"><strong>Yale University</strong> (Ph.D. in Computer Science)</p>
+            <p>Advisor: <a href="http://vision.cs.yale.edu/members/alex-wong/">Prof. Alex Wong</a></p>
+            <p>Research: 3D/4D scene reconstruction, neural rendering</p>
+          </div>
+        </article>
+        <article class="exp">
+          <img src="images/jhu.svg" alt="Johns Hopkins University">
+          <div>
+            <p class="exp-title"><strong>Johns Hopkins University</strong> (M.S. in Data Science)</p>
+            <p>Advisors: <a href="https://www.cs.jhu.edu/~ayuille1/">Prof. Alan Yuille</a> and <a href="https://cifar.ca/bios/craig-jones">Prof. Craig Jones</a></p>
+            <p>Research: Continual learning, uncertainty quantification</p>
+          </div>
+        </article>
+        <article class="exp">
+          <img src="images/hku.svg" alt="The University of Hong Kong">
+          <div>
+            <p class="exp-title"><strong>The University of Hong Kong</strong> (B.Eng. in Computer Science)</p>
+            <p>Honors: First Class Honors, Dean's List</p>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2 id="publications">Selected Publications</h2>
+        <article class="paper">
+          <img class="teaser" src="teasers/evidential_nerf.jpg" alt="Teaser for Evidential Neural Radiance Fields">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2602.23574">Evidential Neural Radiance Fields</a> <span class="paper-links">[<a href="https://github.com/KerryDRX/EvidentialNeRF">Code</a>]</span></h3>
+            <p class="authors"><strong>Ruxiao Duan</strong>, Alex Wong</p>
+            <p class="venue">CVPR 2026 <strong>(Oral, Best Paper Award Candidate)</strong></p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <img class="teaser" src="teasers/camera3r.jpg" alt="Teaser for Extending 3D Reconstruction Models to Any Camera">
+          <div>
+            <h3>Extending 3D Reconstruction Models to Any Camera</h3>
+            <p class="authors"><strong>Ruxiao Duan</strong>, Yunwen Zhou, Erin Hong, Dongxu Zhao, Eric Turner, Federico Tombari, Alex Wong</p>
+            <p class="venue">NeurIPS 2026</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <img class="teaser" src="teasers/fisheye3r.jpg" alt="Teaser for Fisheye3R">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2603.28896">Fisheye3R: Adapting Unified 3D Feed-Forward Foundation Models to Fisheye Lenses</a> <span class="paper-links">[<a href="https://github.com/android-xr/fisheye3r">Code</a>]</span></h3>
+            <p class="authors"><strong>Ruxiao Duan</strong>, Erin Hong, Dongxu Zhao, Eric Turner, Alex Wong, Yunwen Zhou</p>
+            <p class="venue">ECCV 2026</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <img class="teaser" src="teasers/pescr.jpg" alt="Teaser for Prompt-Based Exemplar Super-Compression and Regeneration for Class-Incremental Learning">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2311.18266">Prompt-Based Exemplar Super-Compression and Regeneration for Class-Incremental Learning</a> <span class="paper-links">[<a href="https://github.com/KerryDRX/PESCR">Code</a>]</span></h3>
+            <p class="authors"><strong>Ruxiao Duan</strong>, Jieneng Chen, Adam Kortylewski, Alan Yuille, Yaoyao Liu</p>
+            <p class="venue">BMVC 2025</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <img class="teaser" src="teasers/variance_uncertainty.jpg" alt="Teaser for Evidential Uncertainty Quantification">
+          <div>
+            <h3><a href="https://arxiv.org/abs/2311.11367">Evidential Uncertainty Quantification: A Variance-Based Perspective</a> <span class="paper-links">[<a href="https://github.com/KerryDRX/EvidentialADA">Code</a>]</span></h3>
+            <p class="authors"><strong>Ruxiao Duan</strong>, Brian Caffo, Harrison X. Bai, Haris I. Sair, Craig Jones</p>
+            <p class="venue">WACV 2024</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = ["about", "experience", "education", "publications"];
+
+    function navOffset() {
+      const heading = document.querySelector("main h2");
+      const range = document.createRange();
+      range.selectNodeContents(heading);
+      const lead = range.getBoundingClientRect().top - heading.getBoundingClientRect().top;
+      return document.querySelector(".main-nav").offsetHeight - lead;
+    }
+
+    function syncNavOffset() {
+      document.documentElement.style.scrollPaddingTop = navOffset() + "px";
+    }
+
+    syncNavOffset();
+    window.addEventListener("resize", syncNavOffset);
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.forEach(item => item.classList.remove("active"));
+        link.classList.add("active");
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      const line = navOffset();
+      const atBottom = window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      let current = atBottom ? sections[sections.length - 1] : "about";
+      if (!atBottom) {
+        sections.forEach(id => {
+          const section = document.getElementById(id);
+          if (section && section.getBoundingClientRect().top <= line + 8) current = id;
+        });
+      }
+      navLinks.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+      });
+    });
+  </script>
+</body>
+</html>
